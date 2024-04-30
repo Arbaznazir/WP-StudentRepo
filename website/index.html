@@ -1,81 +1,108 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>My Beautiful Website</title>
-	<link rel="icon" type="image/png" href="res/img/favicon.png" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<script src="js/script.js"></script>
+  <title>Edu Web</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-<div id="top" ></div>
-<!-- Sliding images placeholder -->
-<div id="ImgContainer">
 
-	<div id="bar" >
-		<div id="c1" onclick="changeColor('c1')"></div>
-		<div id="c2" onclick="changeColor('c2')"></div>
-		<div id="c3" onclick="changeColor('c3')"></div>
-		<div id="c4" onclick="changeColor('c4')"></div>
-		<div id="c5" onclick="changeColor('c5')"></div>
-	</div>
-
-	<!-- Login/Register button -->
-	<div id="login-register">
-		<button class="login-btn">Login</button>
-		<button class="register-btn">Register</button>
-	</div>
-	<div id="greeting-date-time">
-		<h2 id="greeting">Good Evening!</h2>
-		<p id="date-time">April 16, 2024 | 4:00 PM</p>
-	</div>
-
-	<div id="slideshow-container">
-      		<img class="Slideimg" id="current-image" src="res/img/image1.jpg" alt="Image 1" />
-    	</div>
-	<!-- Slideshow buttons -->	
-	<div id="slideshow-buttons">
-		<button id="prev-btn" onclick="changeImage('prev')">&lt;</button>	
-		<button id="next-btn" onclick="changeImage('next')">&gt;</button>
-	</div>
-	<h1 id="text-on-image" >Welcome to My Beautiful Website</h1>
+<div class="navbar">
+  <img class="logo" src="./res/logo.png" height="40px" alt="logo">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+  <a href="#contact">Contact</a>
 </div>
+<section>
+  <div class="main-content">
+    <div class="grid-container">
+      <div class="left-side">
+        <p class="topHeadding">Education</p>
+        <p class="topHeaddingTag">Center</p>
+      </div>
+      <div class="right-side">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="./res/logo.png" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="./res/logo.png" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="./res/logo.png" style="width:100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- Navigation bar -->
-<div id="menubar" class="menu">
-	<a href="index.html" id="link1">Home</a>
-	<a href="about.html" id="link2">About</a>
-	<a href="contact-us.html" id="link3" >Contact</a>
-</div> 
+<section>
+  <div class="features">
+    <div class="feature">
+      <img src="./res/coueseOffered.png" alt="Logo 1">
+      <div class="feature-text">Course Offers</div>
+    </div>
+    <div class="feature">
+      <img src="./res/studentFeedback.png" alt="Logo 2">
+      <div class="feature-text">Student Feedbacks</div>
+    </div>
+    <div class="feature">
+      <img src="./res/support.png" alt="Logo 3">
+      <div class="feature-text">Quick Support</div>
+    </div>
+  </div>
+</section>
 
-<!-- Three full-width sections -->
-<div id="bodycontainer">
+<section>
+  <div class="statistics">
+    <div class="statistic">
+      <img src="./res/studentCount.png" alt="Student Count">
+      <div class="statistic-text">Total Student Count</div>
+    </div>
+    <div class="statistic">
+      <img src="./res/distanceStudy.png" alt="Distance Study">
+      <div class="statistic-text">Distance Study</div>
+    </div>
+    <div class="statistic">
+      <img src="./res/onlineCourses.png" alt="Online Course">
+      <div class="statistic-text">Online Course</div>
+    </div>
+  </div>
+</section>
 
-	<div id="bd1" class="bodycontainers">
-      		<p> Section 1 - Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content 	
-		</p>
-	</div>
+<footer class="footer">
+  <div class="footer-column">
+    <h3>Home Content</h3>
+    <p>Home</p>
+  </div>
+  <div class="footer-column">
+    <h3>About Us</h3>
+    <p>About</p>
+  </div>
+  <div class="footer-column">
+    <h3>Social Media</h3>
+    <p>Follow us on:</p>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </div>
+</footer>
 
-	<div id="bd2" >
-      		<p> Section 2 - Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content
-		</p>
-	</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-	<div id="bd3">
-		<p>Section 3 - Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content- Dummy Content
-		</p>
-	</div>
-</div>  
-  <!-- Top button -->
-	<div id="GoToTop"> 
-		<a href="#top" ><img src="res/img/top.png" height="50px" width="50px" /></a>
-	</div>
+<script src="./js/script.js"></script>
 
-	<!-- Footer -->
-	<div id="footer" class="foot" >
-		<b>&copy; 2024 My Beautiful Website</b>
-	</div>
 </body>
 </html>
-
